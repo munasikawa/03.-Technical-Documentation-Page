@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fa-brands, .fa-regular, .fa-sharp, .fa-solid {
+    padding-right: 20px;
+}
+
+
+/* Navbar styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #2b2b2b;
+    color: #f8f8f8;
+    font-size: 1.2rem;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+#navbar header {
+    padding: 10px;
+    font-size: 1.0rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* 
+#navbar ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+} */
+
+.navlist {
+    list-style: none;
+}
+
+.list {
+    list-style: square;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link {
+    display: block;
+    color: #f8f8f8;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:hover {
+    background-color: #f8f8f8;
+    color: #2b2b2b;
+}
+
+/* Main content styling */
+#main-doc {
+    margin-left: 25%;
+    font-size: 1.0rem;
+}
+
+.main-section {
+    padding-left: 50px;
+    padding-top: 20px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 65vw;
+}
+
+.main-section header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.main-section code {
+    background-color: #f8f8f8;
+    padding: 10px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.main-section li {
+    margin-bottom: 10px;
+}
+
+h4 {
+    padding-bottom: 5px;
+}
+
+/* Per section styling */
+
+#reactjs {
+    background: #ECE9E6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#toolchain {
+    background: #ECE9E6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #FFFFFF, #ECE9E6);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#architecture {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#jsx {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#expressions {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#functions {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#attributes {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#component {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#styling {
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        /* padding: 20px 20px 50px 20px; */
+        position: relative;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        /* padding: 50px 20px; */
+    }
+}

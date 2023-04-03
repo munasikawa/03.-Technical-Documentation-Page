@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://kit.fontawesome.com/28376e7912.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Technical Documentation</h1>
+      </header>
+      <ul class="navlist">
+        <li>
+          <a class="nav-link" href="#ReactJS">ReactJS</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Toolchain">Toolchain</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Architecture">Architecture</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#JSX">JSX</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Expressions">Expressions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Functions">Functions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Attributes">Attributes</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Component">Component</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Styling">Styling</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <!-- React JS -->
+      <section class="main-section" id="ReactJS">
+        <header>ReactJS</header>
+        <p>
+          ReactJS is a simple, feature rich, component based JavaScript UI
+          library. It can be used to develop small applications as well as big,
+          complex applications. ReactJS provides minimal and solid feature set
+          to kick-start a web application. React community compliments React
+          library by providing large set of ready-made components to develop web
+          application in a record time. React community also provides advanced
+          concept like state management, routing, etc., on top of the React
+          library.
+        </p>
+        <h4>Benefits</h4>
+        <p>Few benefits of using <em>React library</em> are as follows :</p>
+        <ul class="list">
+          <li>Easy to learn</li>
+          <li>Easy to adept in modern as well as legacy application</li>
+          <li>Faster way to code a functionality</li>
+          <li>Availability of large number of ready-made component</li>
+          <li>Large and active community</li>
+        </ul>
+      </section>
+
+      <!-- Toolchain -->
+      <section class="main-section" id="Toolchain">
+        <header>Toolchain</header>
+        <p>
+          To develop lightweight features such as form validation, model dialog,
+          etc., React library can be directly included into the web application
+          through content delivery network (CDN). It is similar to using jQuery
+          library in a web application. For moderate to big application, it is
+          advised to write the application as multiple files and then use
+          bundler such as webpack, parcel, rollup, etc., to compile and bundle
+          the application before deploying the code.
+        </p>
+        <p>
+          React toolchain helps to create, build, run and deploy the React
+          application. React toolchain basically provides a starter project
+          template with all necessary code to bootstrap the application.
+        </p>
+        <p>Some of the popular toolchain to develop React applications are :</p>
+        <ul class="list">
+          <li>Create React App : SPA oriented toolchain</li>
+          <li>Next.js : server-side rendering oriented toolchain</li>
+          <li>Gatsby : Static content oriented toolchain</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Architecture">
+        <header>Architecture</header>
+        <p>
+          React library is built on a solid foundation. It is simple, flexible
+          and extensible. As we learned earlier, React is a library to create
+          user interface in a web application. React’s primary purpose is to
+          enable the developer to create user interface using pure JavaScript.
+          Normally, every user interface library introduces a new template
+          language (which we need to learn) to design the user interface and
+          provides an option to write logic, either inside the template or
+          separately.
+        </p>
+        <p>
+          Instead of introducing new template language, React introduces three
+          simple concepts as given below:
+        </p>
+        <h4>React elements</h4>
+        <p>
+          JavaScript representation of HTML DOM. React provides an API,
+          <strong><em>React.createElement</em></strong> to create React Element.
+        </p>
+      </section>
+
+      <section class="main-section" id="JSX">
+        <header>JSX</header>
+        <p>
+          A JavaScript extension to design user interface. JSX is an XML based,
+          extensible language supporting HTML syntax with little modification.
+          JSX can be compiled to React Elements and used to create user
+          interface.
+        </p>
+        <h4>React component</h4>
+        <p>
+          React component is the primary building block of the React
+          application. It uses React elements and JSX to design its user
+          interface. React component is basically a JavaScript class (extends
+          the React.component class) or pure JavaScript function. React
+          component has properties, state management, life cycle and event
+          handler. React component can be able to do simple as well as advanced
+          logic.
+        </p>
+      </section>
+
+      <section class="main-section" id="Expressions">
+        <header>Expressions</header>
+        <p>
+          JSX supports expression in pure JavaScript syntax. Expression has to
+          be enclosed inside the curly braces, { }. Expression can contain all
+          variables available in the context, where the JSX is defined. Let us
+          create simple JSX with expression.
+        </p>
+        <h4>Example</h4>
+        <code
+          >var cTime = new Date().toTimeString(); ReactDOM.render( The current
+          time is {cTime} , document.getElementById('react-app') );</code
+        >
+        <h4>Output</h4>
+        <p>
+          Here, cTime used in the JSX using expression. The output of the above
+          code is as follows,
+        </p>
+        <code>The Current time is 21:19:56 GMT+0530(India Standard Time)</code>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          JSX supports user defined JavaScript function. Function usage is
+          similar to expression. Let us create a simple function and use it
+          inside JSX.
+        </p>
+        <h4>Example</h4>
+        <code>
+          var cTime = new Date().toTimeString(); ReactDOM.render( The current
+          time is {cTime}, document.getElementById('react-app')
+        </code>
+        <h4>Output</h4>
+        <p>
+          Here, getCurrentTime() is used get the current time and the output is
+          similar as specified below :
+        </p>
+        <code>The Current time is 21:19:56 GMT+0530(India Standard Time)</code>
+      </section>
+
+      <section class="main-section" id="Attributes">
+        <header>Attributes</header>
+        <p>
+          JSX supports HTML like attributes. All HTML tags and its attributes
+          are supported. Attributes has to be specified using camelCase
+          convention (and it follows JavaScript DOM API) instead of normal HTML
+          attribute name. For example, class attribute in HTML has to be defined
+          as className.
+        </p>
+
+        <h4>Example</h4>
+        <code>
+          function getCurrentTime() {return new Date().toTimeString();}
+          ReactDOM.render(The current time
+          is>{getCurrentTime()},document.getElementById('react-app'));
+        </code>
+        <h4>Output</h4>
+        <p>The output is as follows :</p>
+        <code>
+          The Current time is 22:36:55 GMT+0530(India Standard Time)
+        </code>
+      </section>
+
+      <section class="main-section" id="Component">
+        <header>Component</header>
+        <p>
+          A React component represents a small chunk of user interface in a
+          webpage. The primary job of a React component is to render its user
+          interface and update it whenever its internal state is changed. In
+          addition to rendering the UI, it manages the events belongs to its
+          user interface. To summarize, React component provides below
+          functionalities.
+        </p>
+        <ul class="list">
+          <li>Initial rendering of the user interface.</li>
+          <li>Management and handling of events.</li>
+          <li>
+            Updating the user interface whenever the internal state is changed.
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Styling">
+        <header>Styling</header>
+        <p>
+          In general, React allows component to be styled using CSS class
+          through className attribute. Since, the React JSX supports JavaScript
+          expression, a lot of common CSS methodology can be used. Some of the
+          top options are as follows :
+        </p>
+        <ul class="list">
+          <li>
+            <strong>CSS stylesheet</strong> − Normal CSS styles along
+            with className
+          </li>
+          <li>
+            <strong>Inline styling</strong> − CSS styles as JavaScript objects
+            along with camelCase properties.
+          </li>
+          <li><strong>CSS Modules</strong> − Locally scoped CSS styles.</li>
+          <li><strong>Styled component</strong> − Component level styles.</li>
+          <li>
+            <strong>Sass stylesheet</strong> − Supports Sass based CSS styles by
+            converting the styles to normal css at build time.
+          </li>
+          <li>
+            <strong>Post processing stylesheet</strong> − Supports Post
+            processing styles by converting the styles to normal css at build
+            time.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
